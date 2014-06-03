@@ -1,6 +1,30 @@
-$body-bg:	#ecf0f1;
-$navbar-inverse-bg:	#c0392b;
-$navbar-inverse-link-color:	white;
-$jumbotron-bg: #95a5a6;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Satisfy);
+
+$font-family-sans-serif: 		'Lato', 'Satisfy';
+
+$body-bg:						#bdc3c7;
+
+//navbar 
+$navbar-height: 				45px;
+$navbar-default-bg: 			white;
+$navbar-border-radius: 			1px;
+$navbar-default-brand-color: 	#c0392b;
+$input-border-focus:			#c0392b;
+
+//button
+$brand-primary: 				#c0392b;
+
+//jumbotron
+$jumbotron-bg: 					white;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-family: 'Satisfy';
+	font-weight: bold;
+	padding-left: 250px;
+}
