@@ -11,6 +11,11 @@
 	
 	<%= render 'layouts/header' %>
 	<div class="container">
+
+		<!-- do not need to include an = after % if you don't want it to show up on the actual webpage (e.g for flash messages that dissapear) -->
+		<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class: "alert alert-info") %>
+		<% end %>
 		<%= yield %>
 	</div>
 
